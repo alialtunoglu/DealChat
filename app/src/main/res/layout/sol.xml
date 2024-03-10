@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/sil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/silgri"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/copygri"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/goruldu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/gorulmedi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/mesajresim"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/mesaj"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merhaba"
+            android:layout_marginStart="5dp"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/saat"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12.05 pm"
+            android:layout_marginStart="5dp"
+            android:padding="3dp"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_toEndOf="@+id/card"
+        android:id="@+id/tarih"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05/06/2020"
+        android:layout_marginStart="5dp"
+        android:padding="3dp"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

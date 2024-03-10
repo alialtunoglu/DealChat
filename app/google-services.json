@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "852270762607",
+    "project_id": "dealchat-3e360",
+    "storage_bucket": "dealchat-3e360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852270762607:android:5aab576291af35fb941b9a",
+        "android_client_info": {
+          "package_name": "com.alialtunoglu.dealchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHRDGFiwWRRNT7XXdtlQVMrT3DphKFUXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

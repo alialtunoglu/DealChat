@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/resimKullanici"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_profile"/>
+
+        <TextView
+            android:layout_alignStart="@+id/resimKullanici"
+            android:id="@+id/kullaniciAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Kullanıcı Adı"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_alignStart="@+id/resimKullanici"
+            android:id="@+id/sonmesaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="24dp"
+            android:text="Mesajınız Yok"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13dp"
+            />
+    <ImageView
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mesajgonder"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/mesaj"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:text="Online"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/online"
+        android:layout_alignStart="@+id/resimKullanici"
+        android:layout_below="@+id/kullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="#4CAF50"
+        android:layout_alignLeft="@id/resimKullanici"
+        tools:ignore="NotSibling"
+        android:visibility="gone"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:text="Offline"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/offline"
+        android:layout_alignStart="@+id/resimKullanici"
+        android:layout_below="@+id/kullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_alignLeft="@id/resimKullanici"
+        tools:ignore="NotSibling"
+        android:visibility="gone"
+        android:layout_marginLeft="8dp" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btn_follow"
+        android:textColor="@color/colorPrimary"
+        android:text=""
+        android:layout_marginEnd="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+    
+    
+    
+    
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageActivity"
+    android:background="@drawable/whatsapp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:navigationIcon="@android:color/transparent"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/geritusu"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/geri"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="25dp"
+            android:id="@+id/profilresim"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_profile"/>
+
+        <TextView
+            android:id="@+id/kullaniciadmesaj"
+            android:layout_marginStart="10dp"
+            android:text="salih güngörmez"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mesajrecyler"
+        android:layout_above="@+id/relati"
+        android:layout_below="@+id/tolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/relati"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mesajgirdialani"
+            android:layout_marginBottom="3dp"
+            android:padding="8dp"
+            android:layout_marginEnd="50sp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Mesajınızı giriniz"
+            android:textColor="@color/colorPrimaryDark"
+
+            android:background="@drawable/mesajcerceve"/>
+
+        <ImageView
+            android:id="@+id/fotoeklemesaj"
+            android:layout_marginEnd="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/foto"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/gonderbtn"
+            android:layout_marginEnd="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/gonder"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

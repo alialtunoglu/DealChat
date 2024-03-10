@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_editprofile"
+        android:title="Profili Düzenle"/>
+    <item android:id="@+id/nav_signout"
+        android:title="Çıkış Yap"/>
+</menu>
